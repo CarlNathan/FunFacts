@@ -15,6 +15,8 @@
 		ED04F5A41C1A068200558CFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED04F5A21C1A068200558CFC /* LaunchScreen.storyboard */; };
 		ED04F5AF1C1A068200558CFC /* FunFactsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED04F5AE1C1A068200558CFC /* FunFactsTests.m */; };
 		ED04F5BA1C1A068200558CFC /* FunFactsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED04F5B91C1A068200558CFC /* FunFactsUITests.m */; };
+		ED04F5C91C1A1C2600558CFC /* FactBook.m in Sources */ = {isa = PBXBuildFile; fileRef = ED04F5C81C1A1C2600558CFC /* FactBook.m */; };
+		ED04F5CC1C1A2CCD00558CFC /* ColorWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED04F5CB1C1A2CCD00558CFC /* ColorWheel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		ED04F5B51C1A068200558CFC /* FunFactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunFactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED04F5B91C1A068200558CFC /* FunFactsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunFactsUITests.m; sourceTree = "<group>"; };
 		ED04F5BB1C1A068200558CFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED04F5C71C1A1C2600558CFC /* FactBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FactBook.h; sourceTree = "<group>"; };
+		ED04F5C81C1A1C2600558CFC /* FactBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FactBook.m; sourceTree = "<group>"; };
+		ED04F5CA1C1A2CCD00558CFC /* ColorWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorWheel.h; sourceTree = "<group>"; };
+		ED04F5CB1C1A2CCD00558CFC /* ColorWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorWheel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				ED04F5981C1A068200558CFC /* AppDelegate.m */,
 				ED04F59A1C1A068200558CFC /* ViewController.h */,
 				ED04F59B1C1A068200558CFC /* ViewController.m */,
+				ED04F5C71C1A1C2600558CFC /* FactBook.h */,
+				ED04F5C81C1A1C2600558CFC /* FactBook.m */,
+				ED04F5CA1C1A2CCD00558CFC /* ColorWheel.h */,
+				ED04F5CB1C1A2CCD00558CFC /* ColorWheel.m */,
 				ED04F59D1C1A068200558CFC /* Main.storyboard */,
 				ED04F5A01C1A068200558CFC /* Assets.xcassets */,
 				ED04F5A21C1A068200558CFC /* LaunchScreen.storyboard */,
@@ -207,6 +217,7 @@
 				TargetAttributes = {
 					ED04F5901C1A068200558CFC = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 95ZRVL9PPJ;
 					};
 					ED04F5A91C1A068200558CFC = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -272,7 +283,9 @@
 			files = (
 				ED04F59C1C1A068200558CFC /* ViewController.m in Sources */,
 				ED04F5991C1A068200558CFC /* AppDelegate.m in Sources */,
+				ED04F5C91C1A1C2600558CFC /* FactBook.m in Sources */,
 				ED04F5961C1A068200558CFC /* main.m in Sources */,
+				ED04F5CC1C1A2CCD00558CFC /* ColorWheel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Carl-Udren.FunFacts";
@@ -422,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Carl-Udren.FunFacts";
@@ -496,6 +511,7 @@
 				ED04F5C01C1A068200558CFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED04F5C11C1A068200558CFC /* Build configuration list for PBXNativeTarget "FunFactsTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +520,7 @@
 				ED04F5C31C1A068200558CFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED04F5C41C1A068200558CFC /* Build configuration list for PBXNativeTarget "FunFactsUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +529,7 @@
 				ED04F5C61C1A068200558CFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
